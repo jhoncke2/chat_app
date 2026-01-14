@@ -1,0 +1,12 @@
+### Get usuario por nombre
+GET http://localhost:1234/users/John Wick
+
+### Get todos los chats de un usuario
+GET http://localhost:1234/chats
+Content-Type: application/json
+UserId: 680f75a7-e4f5-11f0-8d51-0a002700000f
+
+### Get de los mensajes de un chat
+GET http://localhost:1234/chats/2
+Content-Type: application/json
+UserId: 680f75a7-e4f5-11f0-8d51-0a002700000f
