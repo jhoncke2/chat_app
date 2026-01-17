@@ -59,6 +59,33 @@ El backend también se encuentra en una fase de desarrollo activo.
 
 ---
 
+## 📂 Estructura del proyecto
+
+```text
+chatapp-server/
+│
+├── src/
+| ├── config/ # Configuración de base de datos y entorno
+| ├── controllers/ # Controladores de la API
+| ├── infrastructure/ #Servicios de infraestructura (almacenamiento de archivos, integraciones externas, etc.)
+│ ├── middlewares/ # Validaciones y middlewares
+│ ├── models/ # Modelos de entidades de DB
+│ ├── repositories/ # Consultas complejas a la base de datos que combinan múltiples modelos
+│ ├── routes/ # Definición de endpoints
+| ├── schemas/ # Esquemas de validación de requests
+| ├── services/ # Lógica de negocio
+│ └── app.js # Configuración de Express
+│
+├── database/
+│ └── schema.sql # Esquema de la base de datos
+│
+├── tests/ # Tests de la app
+│
+├── .env.example
+├── package.json
+└── README.md
+```
+
 ## 📌 Estado del proyecto
 
 - ✅ Versión estable inicial
@@ -69,4 +96,4 @@ El backend también se encuentra en una fase de desarrollo activo.
 
 ## 📄 Licencia
 
-Este proyecto se distribuye bajo la licencia correspondiente definida por el autor.
+Este proyecto está bajo la licencia MIT.
